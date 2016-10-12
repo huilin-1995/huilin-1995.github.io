@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>搭建博客hexo | HuiLin的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="hexo是一款基于Node.js的静态博客框架,hexo github链接,这篇教程是针对与Mac的，参考链接，由于原文讲到的hexo是以前的老版本，所以现在的版本配置的时候会有些改动。
+配置环境安装Node（必须）作用：用来生成静态页面的 到Node.js官网下载相应平台的最新版本，一路安装即可。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建博客hexo">
+<meta property="og:url" content="http://yoursite.com/2016/10/09/hexo/index.html">
+<meta property="og:site_name" content="HuiLin的博客">
+<meta property="og:description" content="hexo是一款基于Node.js的静态博客框架,hexo github链接,这篇教程是针对与Mac的，参考链接，由于原文讲到的hexo是以前的老版本，所以现在的版本配置的时候会有些改动。
+配置环境安装Node（必须）作用：用来生成静态页面的 到Node.js官网下载相应平台的最新版本，一路安装即可。">
+<meta property="og:updated_time" content="2016-10-11T06:54:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="搭建博客hexo">
+<meta name="twitter:description" content="hexo是一款基于Node.js的静态博客框架,hexo github链接,这篇教程是针对与Mac的，参考链接，由于原文讲到的hexo是以前的老版本，所以现在的版本配置的时候会有些改动。
+配置环境安装Node（必须）作用：用来生成静态页面的 到Node.js官网下载相应平台的最新版本，一路安装即可。">
+  
+    <link rel="alternative" href="/atom.xml" title="HuiLin的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">HuiLin</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">这个人非常懒</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">HuiLin</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">HuiLin</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">这个人非常懒</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      搭建博客hexo
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>hexo是一款基于Node.js的静态博客框架,<a href="https://github.com/hexojs/hexo" target="_blank" rel="external">hexo github</a>链接,这篇教程是针对与Mac的，参考链接，由于原文讲到的hexo是以前的老版本，所以现在的版本配置的时候会有些改动。</p>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="安装Node（必须）"><a href="#安装Node（必须）" class="headerlink" title="安装Node（必须）"></a>安装Node（必须）</h3><p>作用：用来生成静态页面的 到Node.js<a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a>下载相应平台的最新版本，一路安装即可。<br><a id="more"></a></p>
+<h3 id="安装Git-必须"><a href="#安装Git-必须" class="headerlink" title="安装Git(必须)"></a>安装Git(必须)</h3><p>作用：把本地的hexo内容提交到github上去. 安装Xcode就自带有Git，我就不多说了。</p>
+<h3 id="申请GitHub（必须）"><a href="#申请GitHub（必须）" class="headerlink" title="申请GitHub（必须）"></a>申请GitHub（必须）</h3><p>作用：是用来做博客的远程创库、域名、服务器之类的，怎么与本地hexo建立连接等下讲。 github账号我也不再啰嗦了,没有的话直接申请就行了，跟一般的注册账号差不多，SSH Keys，看你自己了，可以不配制，不配置的话以后每次对自己的博客有改动提交的时候就要手动输入账号密码，配置了就不需要了，怎么配置我就不多说了，网上有很多教程。</p>
+<h3 id="正式安装HEXO"><a href="#正式安装HEXO" class="headerlink" title="正式安装HEXO　"></a>正式安装HEXO　</h3><p>Node和Git都安装好后，可执行如下命令安装hexo：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install -g hexo</div></pre></td></tr></table></figure></p>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>创建一个文件夹，如：Blog，cd到Blog里执行hexo init的。命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
+<p>好啦，至此，全部安装工作已经完成！</p>
+<h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><p>继续再Blog目录下执行如下命令，生成静态页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate （hexo g  也可以）</div></pre></td></tr></table></figure></p>
+<h3 id="本地启动"><a href="#本地启动" class="headerlink" title="本地启动"></a>本地启动</h3><p>启动本地服务，进行文章预览调试，命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
+<p>浏览器输入<a href="http://localhost:4000，进入" target="_blank" rel="external">http://localhost:4000，进入</a></p>
+<p>若报错，解决方式如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ERROR Plugin load failed: hexo-server</div></pre></td></tr></table></figure></p>
+<p>原因：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ Besides, utilities are separated into a standalone module. hexo.util is not reachable anymore.</div></pre></td></tr></table></figure></p>
+<h2 id="解决方法，执行命令："><a href="#解决方法，执行命令：" class="headerlink" title="解决方法，执行命令："></a>解决方法，执行命令：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install hexo-server</div></pre></td></tr></table></figure>
+<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p>执行命令hexo server，有如下提示： Usage: hexo ….<br>原因： 我认为是没有生成本地服务 解决方法，执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure></p>
+<p>提示：hexo-server@0.1.2 node_modules/hexo-server …. 表示成功了<br>这个时候再执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo-server</div></pre></td></tr></table></figure></p>
+<p>得到:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure></p>
+<p>这个时候再点击<a href="http://0.0.0.0:4000，正常情况下应该是最原始的画面，但是我看到的是：" target="_blank" rel="external">http://0.0.0.0:4000，正常情况下应该是最原始的画面，但是我看到的是：</a> 白板和Cannot GET / 几个字 原因： 由于2.6以后就更新了，我们需要手动配置些东西，我们需要输入下面三行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-renderer-ejs --save</div><div class="line">$ npm install hexo-renderer-stylus --save</div><div class="line">$ npm install hexo-renderer-marked --save</div></pre></td></tr></table></figure></p>
+<p>这个时候再重新生成静态文件，命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate （或hexo g）</div></pre></td></tr></table></figure></p>
+<p>启动本地服务器：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server （或hexo s）</div></pre></td></tr></table></figure></p>
+<p>再点击网址<a href="http://0.0.0.0:4000" target="_blank" rel="external">http://0.0.0.0:4000</a> OK终于可以看到属于你自己的blog啦，?，虽然很简陋，但好歹有了一个属于自己的小窝了。参考链接，本地已经简单的设置好了，但是现在域名和服务器都是基于自己的电脑，接下来需要跟github进行关联。</p>
+<h2 id="配置Github"><a href="#配置Github" class="headerlink" title="配置Github"></a>配置Github</h2><h3 id="建立Repository"><a href="#建立Repository" class="headerlink" title="建立Repository"></a>建立Repository</h3><p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法 然后建立关联，我的Blog在本地/Users/leopard/Blog，Blog是我之前建的东西也全在这里面，有：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">Blog </div><div class="line">├── _config.yml   </div><div class="line">├── node_modules     </div><div class="line">├── public             </div><div class="line">├── source      ｜－－ db.json	</div><div class="line">├── package.json    </div><div class="line">├── scaffolds        </div><div class="line">└── themes</div></pre></td></tr></table></figure></p>
+<p>现在我们需要_config.yml文件，来建立关联，命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vim _config.yml</div></pre></td></tr></table></figure></p>
+<p>翻到最下面，改成我这样子的，注意： : 后面要有空格<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repository: https://github.com/huilin-1995/huilin-1995.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>以下为Hexo 3.0.0初始配置。常规需要修改的地方已加中文注释，未加注释的参数不建议新手修改。<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Site  站点配置</span></div><div class="line"><span class="attr">title:</span> HuiLin的博客  <span class="comment">##站点标题</span></div><div class="line"><span class="attr">subtitle:</span> 这个人非常懒  <span class="comment">##站点副标题</span></div><div class="line"><span class="attr">description:</span> 欢迎来看我的博客 <span class="comment">##站点描述</span></div><div class="line"><span class="attr">author:</span> HuiLin  <span class="comment">##作者</span></div><div class="line"><span class="attr">language:</span> <span class="comment">##语言包，需要主题自带才可设置。如Jcaman自带简繁英，设置简体中文填入 zh-CN</span></div><div class="line"><span class="attr">timezone:</span> <span class="comment">#Asia/Shanghai 网站时区</span></div><div class="line"><span class="comment"># URL #可以不用配置</span></div><div class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></div><div class="line"><span class="attr">url:</span> http://yoursite.com  <span class="comment">##站点域名</span></div><div class="line"><span class="attr">root:</span> / <span class="comment">#网站根目录</span></div><div class="line"><span class="attr">permalink:</span> :year/:month/:day/:title/  <span class="comment">##文章永久链接格式，可添加.html后缀，如 :title.html后缀，如</span></div><div class="line"><span class="attr">permalink_defaults:</span>	<span class="comment">#永久链接中各部分的默认值</span></div><div class="line"><span class="comment"># Directory ##目录配置</span></div><div class="line"><span class="attr">source_dir:</span> source <span class="comment">#资源文件夹，这个文件夹用来存放内容</span></div><div class="line"><span class="attr">public_dir:</span> public <span class="comment">#公共文件夹，这个文件夹用于存放生成的站点文件	</span></div><div class="line"><span class="attr">tag_dir:</span> tags <span class="comment">#标签文件夹</span></div><div class="line"><span class="attr">archive_dir:</span> archives <span class="comment">#归档文件夹</span></div><div class="line"><span class="attr">category_dir:</span> categories <span class="comment">#分类文件夹</span></div><div class="line"><span class="attr">code_dir:</span> downloads/code <span class="comment">#Include code 文件夹</span></div><div class="line"><span class="attr">i18n_dir:</span> :lang <span class="comment">#国际化文件夹</span></div><div class="line"><span class="attr">skip_render:</span> <span class="comment">#跳过指定文件的渲染，您可使用 glob 来配置路径</span></div><div class="line"><span class="comment"># Writing 写作配置</span></div><div class="line"><span class="attr">new_post_name:</span> :title.md <span class="comment"># File name of new posts新文章的文件名称</span></div><div class="line"><span class="attr">default_layout:</span> post <span class="comment">#默认布局</span></div><div class="line"><span class="attr">titlecase:</span> <span class="literal">false</span> <span class="comment"># Transform title into titlecase</span></div><div class="line"><span class="attr">external_link:</span> <span class="literal">true</span> <span class="comment"># Open external links in new tab</span></div><div class="line"><span class="attr">filename_case:</span> <span class="number">0</span> <span class="comment">#把文件名称转换为 (1) 小写或 (2) 大写</span></div><div class="line"><span class="attr">render_drafts:</span> <span class="literal">false</span> <span class="comment">#显示草稿</span></div><div class="line"><span class="attr">post_asset_folder:</span> <span class="literal">false</span> <span class="comment">#是否启动资源文件夹</span></div><div class="line"><span class="attr">relative_link:</span> <span class="literal">false</span> <span class="comment">#把链接改为与根目录的相对位址</span></div><div class="line"><span class="attr">future:</span> <span class="literal">true</span></div><div class="line"><span class="attr">highlight:</span>	 <span class="comment">#代码块的设置</span></div><div class="line"><span class="attr">  enable:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  line_number:</span> <span class="literal">true</span></div><div class="line"><span class="attr">  auto_detect:</span> <span class="literal">false</span></div><div class="line"><span class="attr">  tab_replace:</span></div><div class="line"></div><div class="line"><span class="comment"># Category &amp; Tag 分类 &amp; 标签</span></div><div class="line"><span class="attr">default_category:</span> uncategorizedd <span class="comment">#默认分类</span></div><div class="line"><span class="attr">category_map:</span> <span class="comment">#分类别名</span></div><div class="line"><span class="attr">tag_map:</span> <span class="comment">#标签别名</span></div><div class="line"><span class="comment"># Date / Time format 时间和日期</span></div><div class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></div><div class="line"><span class="comment">## You can customize the date format as defined in</span></div><div class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></div><div class="line"><span class="attr">date_format:</span> YYYY-MM-DD</div><div class="line"><span class="attr">time_format:</span> HH:mm:ss</div><div class="line"><span class="comment"># Pagination ##分页</span></div><div class="line"><span class="comment">## Set per_page to 0 to disable pagination</span></div><div class="line"><span class="attr">per_page:</span> <span class="number">10</span>  <span class="comment">#每页显示的文章量 (0 = 关闭分页功能)</span></div><div class="line"><span class="attr">pagination_dir:</span> page <span class="comment">#分页目录</span></div><div class="line"><span class="comment"># Extensions 扩展</span></div><div class="line"><span class="comment">## Plugins: https://hexo.io/plugins/	插件</span></div><div class="line"><span class="comment">## Themes: https://hexo.io/themes/	 主题</span></div><div class="line"><span class="attr">theme:</span> yilia  <span class="comment">##当前主题名称</span></div><div class="line"><span class="comment"># Deployment 部署到github</span></div><div class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></div><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> git</div><div class="line"><span class="attr">  repo:</span> https://github.com/huilin<span class="bullet">-1995</span>/huilin<span class="bullet">-1995.</span>github.io.git</div><div class="line"><span class="attr">  branch:</span> master</div></pre></td></tr></table></figure></p>
+<p>执行如下命令才能使用git部署<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>网上会有很多说法，有的type是github, 还有repository 最后面的后缀也不一样，是github.com.git，我也踩了很多坑，我现在的版本是hexo: 3.1.1，执行命令hexo -vsersion就出来了,貌似3.0后全部改成我上面这种格式了。 忘了说了，我没用SSH Keys如果你用了SSH Keys的话直接在github里复制SSH的就行了，总共就两种协议，相信你懂的。 然后，执行配置命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
+<p>然后再浏览器中输入<a href="http://huilin-1995.github.io/就行了，我的github的账户叫huilin-1995,把这个改成你github的账户名就行了" target="_blank" rel="external">http://huilin-1995.github.io/就行了，我的github的账户叫huilin-1995,把这个改成你github的账户名就行了</a> ### 部署步骤 每次部署的步骤，可按以下三步来进行。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean  <span class="comment">## clean 清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span></div><div class="line">hexo generate	<span class="comment">## generate 生成静态文件</span></div><div class="line">hexo deploy		<span class="comment">## deploy 部署网站。部署网站前，需要预先生成静态文件。</span></div></pre></td></tr></table></figure></p>
+<p>一些常用命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></div><div class="line">hexo new page <span class="string">"pageName"</span> <span class="comment">#新建页面</span></div><div class="line">hexo generate <span class="comment">#生成静态页面至public目录</span></div><div class="line">hexo server <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></div><div class="line">hexo deploy <span class="comment">#将.deploy目录部署到GitHub</span></div><div class="line">hexo <span class="built_in">help</span>  <span class="comment"># 查看帮助</span></div><div class="line">hexo version  <span class="comment">#查看Hexo的版本</span></div></pre></td></tr></table></figure></p>
+<p>我这里有几款个人认为不错的主题，免去你们，一个一个的选了，欢迎吐槽我的审美 ^o^<br>　<a href="https://github.com/daisygao/hexo-themes-cover" target="_blank" rel="external">Cover</a> - A chic theme with facebook-like cover photo  个人感觉挺好看的<br>　<a href="https://github.com/henryhuang/oishi" target="_blank" rel="external">Oishi</a> - A white theme based on Landscape plus and Writing.<br>　<a href="https://github.com/SuperKieran/TKL" target="_blank" rel="external">TKL</a> - A responsive design theme for Hexo. 一个设计优雅的响应式主题<br>　<a href="https://github.com/levonlin/Tinnypp" target="_blank" rel="external">Tinnypp</a> - A clean, simple theme based on Tinny<br>　<a href="https://github.com/yunlzheng/hexo-themes-writing" target="_blank" rel="external">Writing</a> - A small and simple hexo theme based on Light<br><a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">　Yilia</a> - Responsive and simple style 优雅简洁响应式主题，我用得就是这个。 </p>
+<p>Yilia 主题，点击_config.yml<br><figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Header</span></div><div class="line"><span class="attr">menu:</span></div><div class="line">  主页: /</div><div class="line">  随笔: /tags/随笔</div><div class="line"><span class="comment"># SubNav</span></div><div class="line"><span class="attr">subnav:</span></div><div class="line"><span class="attr">  github:</span> <span class="string">"https://github.com/huilin-1995"</span></div><div class="line"><span class="attr">  weibo:</span> <span class="string">"#"</span></div><div class="line"><span class="attr">  rss:</span> <span class="string">"#"</span></div><div class="line"><span class="attr">  zhihu:</span> <span class="string">"#"</span></div><div class="line">  <span class="comment">#douban: "#"</span></div><div class="line">  <span class="comment">#mail: "#"</span></div><div class="line">  <span class="comment">#facebook: "#"</span></div><div class="line">  <span class="comment">#google: "#"</span></div><div class="line">  <span class="comment">#twitter: "#"</span></div><div class="line">  <span class="comment">#linkedin: "#"</span></div><div class="line"><span class="attr">rss:</span> /atom.xml</div><div class="line"><span class="comment"># 是否需要修改 root 路径</span></div><div class="line"><span class="comment"># 如果您的网站存放在子目录中，例如 http://yoursite.com/blog，</span></div><div class="line"><span class="comment"># 请将您的 url 设为 http://yoursite.com/blog 并把 root 设为 /blog/。</span></div><div class="line"><span class="attr">root:</span> </div><div class="line"><span class="comment"># Content</span></div><div class="line"><span class="attr">excerpt_link:</span> more</div><div class="line"><span class="attr">fancybox:</span> <span class="literal">true</span></div><div class="line"><span class="attr">mathjax:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># 是否开启动画效果</span></div><div class="line"><span class="attr">animate:</span> <span class="literal">true</span></div><div class="line"><span class="comment"># 是否在新窗口打开链接</span></div><div class="line"><span class="attr">open_in_new:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># Miscellaneous</span></div><div class="line"><span class="attr">google_analytics:</span> <span class="string">''</span></div><div class="line"><span class="attr">favicon:</span> /favicon.png</div><div class="line"><span class="comment">#你的头像url</span></div><div class="line"><span class="attr">avatar:</span> /img/<span class="number">1.</span>jpg</div><div class="line"><span class="comment">#是否开启分享</span></div><div class="line"><span class="attr">share_jia:</span> <span class="literal">true</span></div><div class="line"><span class="attr">share_addthis:</span> <span class="literal">false</span></div><div class="line"><span class="comment">#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key</span></div><div class="line"><span class="comment">#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论</span></div><div class="line"><span class="attr">duoshuo:</span> <span class="literal">false</span></div><div class="line"><span class="comment"># 如不需要，将该项置为false</span></div><div class="line"><span class="comment"># 比如</span></div><div class="line"><span class="comment">#smart_menu:</span></div><div class="line"><span class="comment">#  friends: false</span></div><div class="line"><span class="attr">smart_menu:</span></div><div class="line"><span class="attr">  innerArchive:</span> <span class="string">'所有文章'</span></div><div class="line"><span class="attr">  tagcloud:</span> <span class="string">'标签'</span></div><div class="line"><span class="attr">  friends:</span> <span class="string">'友链'</span></div><div class="line"><span class="attr">  aboutme:</span> <span class="string">'关于我'</span></div><div class="line"><span class="attr">friends:</span></div><div class="line">  友情链接<span class="number">1</span>: http://localhost:<span class="number">4000</span>/</div><div class="line">  友情链接<span class="number">2</span>: http://localhost:<span class="number">4000</span>/</div><div class="line">  友情链接<span class="number">3</span>: http://localhost:<span class="number">4000</span>/</div><div class="line">  友情链接<span class="number">4</span>: http://localhost:<span class="number">4000</span>/</div><div class="line">  友情链接<span class="number">5</span>: http://localhost:<span class="number">4000</span>/</div><div class="line">  友情链接<span class="number">6</span>: http://localhost:<span class="number">4000</span>/</div><div class="line"><span class="attr">aboutme:</span> 很懒&lt;br&gt;。。。&lt;br&gt;&lt;br<span class="string">&gt;</span></div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/09/hexo/" class="archive-article-date">
+  	<time datetime="2016-10-09T06:20:36.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-09</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node/">node</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/10/10/photoPostName/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          添加照片
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/09/27/es6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">React入门最好的实例－TodoList</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 HuiLin
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/react/" style="font-size: 10px;">react</a> <a href="/tags/webpack/" style="font-size: 10px;">webpack</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">懒猪一枚&lt;br&gt;&lt;br&gt;WELCOME</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
