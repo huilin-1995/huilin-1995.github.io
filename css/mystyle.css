@@ -1,0 +1,53 @@
+#container .left-col .overlay,#mobile-nav .overlay{
+	background: url(../img/bg3.gif) center center no-repeat;
+	background-size: cover;
+}
+#container .left-col{
+	background:#fff url(../img/bg5.gif)  bottom no-repeat;
+  background-size: 182px;
+}
+.profilepic{
+	background-color: #FCBBC7!important;
+}
+.left-col #header .profilepic img{
+	height: 100%;
+	width: 100%;
+}
+.left-col #header .profilepic img:hover{
+		-webkit-animation: turn 2s infinite; 
+		-moz-animation: turn 2s infinite; 
+		-o-animation: turn 2s infinite; 
+		animation: turn 2s infinite;
+}
+@keyframes turn{
+	0{
+		-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg); 
+		-o-transform: rotate(0deg); 
+		transform: rotate(0deg);
+	}
+	50%{
+		-webkit-transform: rotate(360deg); 
+		-moz-transform: rotate(360deg); 
+		-o-transform: rotate(360deg); 
+		transform: rotate(360deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg); 
+		-o-transform: rotate(0deg); 
+		transform: rotate(0deg);
+	}
+}
+.article-header{
+	border-left: 5px solid #FCCAD3!important;
+}
+.article-entry li code, .article-entry p code{
+  color: #c7254e;
+  background: #f9f2f4!important;
+  border: none!important; 
+}
+.article-entry blockquote{
+  background: #FDF8F9!important;
+  border-left: 5px solid #BB9CBD!important;
+}
